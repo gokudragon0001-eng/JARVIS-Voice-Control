@@ -59,7 +59,7 @@ class LocalModelManager(private val context: Context) {
         val activeConversation = conversation
             ?: throw IllegalStateException("Load a local AI model first.")
         val chunks = activeConversation.sendMessageAsync(prompt).toList()
-        chunks.joinToString(separator = "") { it.text }.ifBlank {
+        chunks.joinToString(separator = "") { it.toString() }.ifBlank {
             "I could not create a response. Please try a shorter question."
         }
     }

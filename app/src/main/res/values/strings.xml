@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JARVIS</string>
+    <string name="jarvis_accessibility_description">Allows JARVIS to complete the WhatsApp action you explicitly requested, such as tapping Send or Voice call.</string>
+</resources>
